@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="registration-container">
+        <h2 style="font-family: 'Times New Roman', Times, serif;">REGISTER FOR FOOD</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group" >
+                <label for="password" > password</label>
+                <input type="password" id="password" name="password" required >
+            </div>
+            <div class="form-group">
+                <label for="confirm-password"> confirm-Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+            </div>
+            <button type="submit" class="register-btn"><a href="login.html" style="color:white;">Login</a></button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('login-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        window.location.href = 'login.html'; // Redirect to login page
+    });
+</script>
+</body>
+</html>
+
